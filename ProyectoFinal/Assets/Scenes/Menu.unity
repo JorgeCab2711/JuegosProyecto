@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 131441076}
   - component: {fileID: 131441075}
   - component: {fileID: 131441074}
+  - component: {fileID: 131441077}
   m_Layer: 5
   m_Name: PlayButton
   m_TagString: Untagged
@@ -155,7 +156,7 @@ RectTransform:
   m_Children:
   - {fileID: 703176186}
   m_Father: {fileID: 341283032}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -205,7 +206,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 131441075}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 131441077}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: PlayGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &131441075
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -244,6 +257,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 131441072}
   m_CullTransparentMesh: 1
+--- !u!114 &131441077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 131441072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dcd86efa6da1524bb4c55f6e74608b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &222237970
 GameObject:
   m_ObjectHideFlags: 0
@@ -420,6 +445,7 @@ RectTransform:
   - {fileID: 1445470994}
   - {fileID: 222237972}
   - {fileID: 2078379297}
+  - {fileID: 1209041051}
   - {fileID: 131441073}
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -751,6 +777,7 @@ GameObject:
   - component: {fileID: 1209041050}
   - component: {fileID: 1209041049}
   - component: {fileID: 1209041048}
+  - component: {fileID: 1209041052}
   m_Layer: 5
   m_Name: QuitButton
   m_TagString: Untagged
@@ -801,7 +828,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1209041049}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1209041052}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: QuitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1209041049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -852,14 +891,26 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1500589505}
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_Father: {fileID: 341283032}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 546.8324, y: 294.85895}
-  m_SizeDelta: {x: 181.0047, y: 74.934}
+  m_AnchoredPosition: {x: -30.2, y: -74.575}
+  m_SizeDelta: {x: 136.6179, y: 74.934}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1209041052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1209041047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dcd86efa6da1524bb4c55f6e74608b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1445470991
 GameObject:
   m_ObjectHideFlags: 0
@@ -1019,7 +1070,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: PLAY
+  m_text: 'Quit
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
@@ -1054,7 +1107,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 1
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
