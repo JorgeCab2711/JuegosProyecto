@@ -5,17 +5,16 @@ using UnityEngine;
 public class Pintura1 : MonoBehaviour
 {
     public AudioClip pintura1;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    
+    private bool hasPlayed = false;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag.Equals("Player"))
+        if (other.tag.Equals("Player") && !hasPlayed)
         {
+            hasPlayed = true;
             GetComponent<AudioSource>().PlayOneShot(pintura1);
+            
 
         }
     }
