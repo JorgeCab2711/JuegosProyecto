@@ -55,7 +55,7 @@ public class EnemyAi : MonoBehaviour
         walkPoint = new Vector3(transform.position.x, transform.position.y, transform.position.z + randomZ);
 
         if (Physics.Raycast(walkPoint, -transform.up, 2f, whatIsGround)){
-            walkPointset
+            //walkPointset;
         }
 
 
