@@ -6,12 +6,17 @@ using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
+    public AudioSource AudioSource;
     public GameObject pauseMenu;
+    public Object playerPrefab;
+    GameObject currentPlayer;
+    public float mvolume = 1f;
 
     // Start is called before the first frame update
     void Start()
     {
         Time.timeScale = 1.0f;
+        AudioSource.Play();
     }
 
     // Update is called once per frame
@@ -19,6 +24,7 @@ public class LevelManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
             TooglePause();
+        AudioSource.volume = mvolume;
     }
 
     public void TooglePause()
@@ -38,5 +44,9 @@ public class LevelManager : MonoBehaviour
     public void Restart()
     {
         SceneManager.LoadScene(1);
+    }
+    public void updateVolumen(float volume)
+    {
+        mvolume = volume;
     }
 }
