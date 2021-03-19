@@ -21,7 +21,7 @@ public class Victoria : MonoBehaviour
         {
             Victory();
         }
-        print(score);
+       
     }
     private void OnTriggerEnter(Collider other)
     {

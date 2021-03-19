@@ -341,7 +341,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9816981}
   m_LocalRotation: {x: -0.000000029802322, y: -0.7071068, z: 0.000000037252903, w: 0.7071068}
-  m_LocalPosition: {x: -0.4514498, y: 2.0233412, z: -4.321725}
+  m_LocalPosition: {x: -0.39, y: 2.02, z: -4.32}
   m_LocalScale: {x: 11, y: 6, z: 5.3799973}
   m_Children: []
   m_Father: {fileID: 1629227908}
@@ -9341,15 +9341,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400106, guid: aa723b44260e74040869a722c46a85c5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.41897961
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400106, guid: aa723b44260e74040869a722c46a85c5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 400106, guid: aa723b44260e74040869a722c46a85c5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.61257344
+      value: -0.61
       objectReference: {fileID: 0}
     - target: {fileID: 400106, guid: aa723b44260e74040869a722c46a85c5, type: 3}
       propertyPath: m_LocalRotation.w
@@ -37223,7 +37223,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -47125,7 +47125,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1415416641}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 100.298805, y: 4.9963, z: 134.32}
+  m_LocalPosition: {x: 100.52, y: 4.9963, z: 134.13}
   m_LocalScale: {x: 0.5, y: 5.9712377, z: 4.9986434}
   m_Children:
   - {fileID: 794182071}
@@ -48396,7 +48396,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1447222817}
   m_LocalRotation: {x: -0.14842282, y: -0, z: -0, w: 0.9889241}
-  m_LocalPosition: {x: 90, y: 6.44, z: 116.1912}
+  m_LocalPosition: {x: 90, y: 5.98, z: 116.33}
   m_LocalScale: {x: 9.9, y: 0.9604, z: 33.59425}
   m_Children: []
   m_Father: {fileID: 0}
@@ -60225,6 +60225,7 @@ GameObject:
   - component: {fileID: 1790810843}
   - component: {fileID: 1790810842}
   - component: {fileID: 1790810846}
+  - component: {fileID: 1790810847}
   m_Layer: 3
   m_Name: Piso
   m_TagString: Untagged
@@ -60324,6 +60325,35 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1790810847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1790810841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.16666667
+  m_BuildHeightMesh: 0
+  m_NavMeshData: {fileID: 0}
 --- !u!1 &1795475749
 GameObject:
   m_ObjectHideFlags: 0
