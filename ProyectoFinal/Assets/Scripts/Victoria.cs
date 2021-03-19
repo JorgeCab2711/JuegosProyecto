@@ -17,7 +17,7 @@ public class Victoria : MonoBehaviour
     void Update()
     {
        
-        if (score > 1)
+        if (score > 3)
         {
             Victory();
         }

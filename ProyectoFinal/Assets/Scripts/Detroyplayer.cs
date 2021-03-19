@@ -1,12 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class Detroyplayer : MonoBehaviour
 {
+    public GameObject player;
     private void OnTriggerEnter(Collider other) {
-        if(other.gameObject.CompareTag("Enemy")){
-            Destroy(gameObject);
+        if(other.gameObject.CompareTag("Player")){
+            SceneManager.LoadScene(3);
         }
     }
 }
